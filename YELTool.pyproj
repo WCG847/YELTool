@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5b234599-8aae-4fc2-90b3-ea9189c4290f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>YELTool.py</StartupFile>
+    <StartupFile>main_window.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="YELTool.py" />
+    <Compile Include="main_window.py" />
+    <Compile Include="YukesParse\HCTP.py" />
+    <Compile Include="YukesParse\SYM.py" />
+    <Compile Include="YukesParse\__init__.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="YukesParse\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
